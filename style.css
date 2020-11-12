@@ -71,16 +71,7 @@ table {
 
 #quim{display: none;}
 }
-@media only screen and (max-width: 768px) {
-   #proj{display: none;}
 
-#quim{display: none;}
-	
-#	{display: none;}
-
-#dropdown{display: none;}
-
-}
 body {
 	font-size: 15px;
 	line-height: 20px;
