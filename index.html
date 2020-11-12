@@ -922,7 +922,7 @@ background-size: cover;">
                   </div>
                              
                               <div class="form-group">
-                                  <button id="submit-form" type="submit" class="btn btn-block">اطلب الآن <br><span>توصيل مجاني ـ الدفع عند الاستلام  </span></button> </div>
+                                  <button id="submit_form" type="submit" class="btn btn-block">اطلب الآن <br><span>توصيل مجاني ـ الدفع عند الاستلام  </span></button> </div>
                           </form>
                       </div>
           </section>
@@ -1584,7 +1584,7 @@ background-size: cover;">
                   </div>
                              
                               <div class="form-group">
-                                  <button id="submit-form" type="submit" class="btn btn-block">اطلب الآن <br><span>توصيل مجاني ـ الدفع عند الاستلام  </span></button> </div>
+                                  <button id="submit_form" type="submit" class="btn btn-block">اطلب الآن <br><span>توصيل مجاني ـ الدفع عند الاستلام  </span></button> </div>
                           </form>
                       </div>
           </section>
@@ -1779,8 +1779,9 @@ background-size: cover;">
 
     <script>
       $(document).ready(function(){
-        	$("#submit-form").click(function(){
+        	$("#submit_form").click(function(){
             var now = new Date().getTime();
+            alert(now);
             $('#Date').val(now);
         	    var nom_complet = $("#Nom_Complet").val();
         	    var telephone = $("#Telephone").val();
