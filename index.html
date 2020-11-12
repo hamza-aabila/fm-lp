@@ -915,7 +915,7 @@ background-size: cover;">
                                   <input type="text" placeholder="المدينة" class="form-control" id="Ville" name="Ville" required="">
                   <input type="hidden" id="ID" name="ID" value="FMiel">
                   <input type="hidden" id="Source" name="Source" value="LP">
-                  <input type="hidden" id="Date" name="Date" value="2020/10/26">
+                  <input type="hidden" id="Date" name="Date" value="">
                   <input type="hidden" id="Qte" name="Qte" value="1">
                   <input type="hidden" id="Confirmation" name="Confirmation" value="En cours">
                   <input type="hidden" id="Produit" name="Produit" value="عسل فيمومييل الفعال">
@@ -1577,7 +1577,7 @@ background-size: cover;">
                                   <input type="text" placeholder="المدينة" class="form-control" id="Ville" name="Ville" required="">
                   <input type="hidden" id="ID" name="ID" value="FMiel">
                   <input type="hidden" id="Source" name="Source" value="LP">
-                  <input type="hidden" id="Date" name="Date" value="2020/10/26">
+                  <input type="hidden" id="Date" name="Date" value="">
                   <input type="hidden" id="Qte" name="Qte" value="1">
                   <input type="hidden" id="Confirmation" name="Confirmation" value="En cours">
                   <input type="hidden" id="Produit" name="Produit" value="عسل فيمومييل الفعال">
@@ -1780,15 +1780,17 @@ background-size: cover;">
     <script>
       $(document).ready(function(){
         	$("#submit-form").click(function(){
-        	var nom_complet = $("#nom_complet").val();
-        	var telephone = $("#telephone").val();
-              var ville = $("#ville").val();
+            $('#Date').val(Date.now());
+        	var nom_complet = $("#Nom_Complet").val();
+        	var telephone = $("#Telephone").val();
+              var ville = $("#Ville").val();
         	if(nom_complet != "" && telephone != "" && ville != ""){
         	$(this).html('<img style="max-height:16px;" src="images/loading.gif" /> المرجو الإنتظار');
         	}
         	});
         
         });
+      
       $('#Total').on('change', function(){
       let prix = $(this).val();
       if(prix == 199){
